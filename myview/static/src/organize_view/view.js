@@ -19,7 +19,6 @@ export const organizeView = {
       props(genericProps, view) {
             const { ArchParser } = view;
             const { arch } = genericProps;
-            console.log(arch);
             const archInfo = new ArchParser().parse(arch);
 
             return {
