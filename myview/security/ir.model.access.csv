@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nn_hr_sync_2hr_data_wizard,nn_hr.sync_2hr_data_wizard,model_nn_hr_sync_2hr_data_wizard,base.group_user,1,1,1,1

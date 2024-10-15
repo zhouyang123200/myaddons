@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+
+    <record id="hr.hr_department_kanban_action" model="ir.actions.act_window">
+      <field name="name">Departments</field>
+      <field name="res_model">hr.department</field>
+      <field name="view_mode">kanban,tree,form,organize</field>
+      <field name="search_view_id" ref="hr.view_department_filter" />
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Create a new department
+        </p>
+        <p>
+          Odoo's department structure is used to manage all documents
+          related to employees by departments: expenses, timesheets,
+          time off, recruitments, etc.
+        </p>
+      </field>
+    </record>
+
+    <record id="view_hr_department_organize" model="ir.ui.view">
+      <field name="name">department organize</field>
+      <field name="model">hr.department</field>
+      <field name="arch" type="xml">
+        <organize name="name" hieriarchy="parent_id"></organize>
+      </field>
+    </record>
+  </data>
+</odoo>

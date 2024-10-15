@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="myview.organize_render_temp" owl="1">
+        <t t-foreach="props.model.records" t-as="record" t-key="record.id">
+            <h1><t t-esc="record.name"/></h1>
+        </t>
+    </t>
+</templates>
